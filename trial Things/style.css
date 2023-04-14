@@ -1,0 +1,55 @@
+#word {
+    display: inline-block;
+    position: relative;
+    font-size: 24px;
+    transition: font-size 0.3s ease-in-out;
+  }
+  
+  #word .blob {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #word .blob1 {
+    background-color: #ff7f50;
+  }
+  
+  #word .blob2 {
+    background-color: #6495ed;
+  }
+  
+  #word .blob3 {
+    background-color: #ff69b4;
+  }
+
+  #dsouza {
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #dsouza::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #007bff;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+  }
+  
+  #dsouza:hover {
+    color: #fff;
+  }
+  
+  #dsouza:hover::before {
+    width: 100%;
+  }
